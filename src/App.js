@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home';
+import Login from './Components/Login';
+import DetailsSection from './Components/DetailsSection';
+import { Routes, Route } from 'react-router-dom';
+import NavbarSectionNew from './Components/NavbarSectionNew';
+import Register from './Components/Register';
+import BankFormDetails from './Components/Bankform/BankFormDetails';
+import DeleteForm from './Components/Bankform/DeleteForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavbarSectionNew/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/details' element={<DetailsSection/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/bankFormDetails' element={<BankFormDetails/>}/>
+      </Routes>  
+      <DeleteForm/>   
+    </>
   );
 }
 
