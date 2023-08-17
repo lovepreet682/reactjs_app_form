@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import NavbarSectionNew from './Components/NavbarSectionNew';
 import Register from './Components/Register';
 import BankFormDetails from './Components/Bankform/BankFormDetails';
-import DeleteForm from './Components/Bankform/DeleteForm';
+
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/bankFormDetails' element={<BankFormDetails/>}/>
       </Routes>  
-      <DeleteForm/>   
+        
     </>
   );
 }

@@ -33,9 +33,9 @@ function NavbarSectionNew() {
                                 <Link class="nav-link" to="/login"><LoginIcon style={{ marginRight: "2px" }} />Login</Link>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown
-                                </a>
+                                </Link>
                                 <ul class="dropdown-menu">
                                     <li><Link class="dropdown-item" to="/details">Config</Link></li>
                                     <li><Link class="dropdown-item" href="/admin">Admin </Link></li>
