@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 function BankFormDetails() {
     const [form, setFrom] = useState({
         files: "",
@@ -190,7 +191,7 @@ function BankFormDetails() {
                         </div>
 
                         <div className='d-flex justify-content-center align-items-center'>
-                            <a href='/Success' className='btn btn-danger'>Submit Here</a>
+                            <Link href='#' className='btn btn-danger'>Submit Here</Link>
                         </div>
                     </div>
                 </div>
